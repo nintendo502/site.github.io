@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+
+
+<html>
+    <html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="icon.ico">
+    <Form name="" method="" action="">
+      <div class="nav"><div class="image"><a href="https://cattoadventure.me"><img src="1.png"></a></div> <b><a href="Home.html" class="active">Home</a> <a href="About.html">About</a> <a href="purchase.html">Purchase</a> <div class="dropdown">
+        <div class="settings">Settings</div>
+        <div class="dropdown-content">
+          <a class="hover">
+            <label id="dark-change"></label>
+          <a style="margin-top: 2px;">Light Mode</a>
+          </a>
+        </b>
+        </div>
+      </div></div> 
+      
+     
+    </Form>
+    <style>
+      .settings
+        {
+          float: right;
+          margin-top: 20px;
+          color: white;
+          text-align: center;
+          padding: 5px 16px;
+          transition: all 0.3s ease;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+      body{
+        left: 24px;
+          transition: 0.4s;
+          background: rgb(0, 1, 59);
+          color: rgb(255, 255, 255);
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      main{
+        margin: 5vh 15%;
+      }
+      h1{
+        font-size: 40px;
+        font-weight: 400;
+        text-align: center;
+      }
+      img{
+        width:50%;
+        height:auto;
+      }
+      p{
+        text-align: justify;
+        font-size: 18px;
+      }
+      label{
+          transition: 0.4s;
+          position: absolute;
+          width: 45px;
+          height: 22px;
+          left: 10px;
+          top: 10px;
+          border: 2px solid;
+          border-radius: 20px;
+      }
+      label:before{
+        transition: 0.4s;
+          position: absolute;
+          content: '';
+          width:20px;
+          height: 20px;
+          left: 1px;
+          top: 1px;
+          border-radius: 50%;
+          background: rgb(255, 255, 255);
+          cursor: pointer;
+          transition: 0.4s;
+      }
+      label.active:before{
+          left: 24px;
+          transition: 0.4s;
+          background: rgb(255, 255, 255);
+      }
+
+      label:hover{
+        color: white;
+      }
+      body.night{
+        transition: 0.4s;
+          background: rgb(255, 255, 255);
+          color: rgb(0, 0, 0)
+      }
+      @media screen and (min-width:900px) {
+        .respon{
+          display: flex;
+        }
+        img{
+          height:50%;
+          width:auto;
+          padding-top: 3vh;
+          padding-right: 5%;
+        }
+        p{
+          max-width: 80%;
+          line-height: 30px;
+        }
+      }
+
+      @media screen and (max-width: 900px) {
+    nav a:not(:first-child) {display: none;}
+    nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+/* Styles for screens smaller than 600px */
+body {
+  font-size: 14px;
+}
+
+
+
+}
+  
+  @media screen and (max-width: 900px) {
+    nav.responsive {position: relative;}
+    nav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    nav.responsive a {
+      float: top;
+      display: block;
+      text-align: right;
+    }
+  }
+
+      footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 120px;
+  }
+
+  .nav {
+    
+    background-color: rgb(255, 89, 0);
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .nav a {
+    
+    float: right;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    padding: 5px 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .nav a {
+      font-size: 10px; /* Adjust the font size for smaller screens */
+    }
+
+    .settings
+      {
+      
+        font-size: 10px;
+      }
+  
+    .image img {
+      width: 30%; /* Adjust the image size for smaller screens */
+      position: absolute;
+      bottom: 0; /* Stick the image to the bottom of the navbar */
+    }
+
+    .custom-cursor{
+        background-image: none;
+    }
+  }
+
+  .nav a:hover {
+    border-bottom: 2px solid white;
+    color: rgb(255, 25, 0);
+  }
+
+  body a{ 
+    color: rgb(182, 182, 182);
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  body a:hover {
+    border-bottom: 2px solid white;
+    color: rgb(255, 25, 0);
+  }
+
+  .dropdown {
+    float: right;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    transition: all 0.3s ease;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(255, 89, 0);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    transition: all 0.3s ease;
+    display: block;
+  }
+    
+  .dropdown-content a {
+    transition: all 0.3s ease;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+  }
+
+  .dropdown-content a:hover {
+    transition: all 0.3s ease;
+    color: white;
+    border-bottom: none;
+  }
+
+  .image a{
+    float: left;
+    margin-top: -28px;
+    
+  }
+
+  .image a:hover{ 
+    border-bottom: none;
+    color: rgb(255, 255, 255);
+  }
+
+  .image-with-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-with-text img {
+    margin-right: 10px;
+  }
+
+    .texty{
+      margin-top: 100px;
+    }
+
+    .textier{
+      margin-top: 1000000px;
+    }
+
+    
+    </style>
+</head>
+<body>
+  <header>
+    
+  </header>
+  <main>
+  </main>
+    <script>
+        
+      var content = document.getElementsByTagName('body')[0];
+        var darkMode = document.getElementById('dark-change');
+        darkMode.addEventListener('click', function(){
+            darkMode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+
+        function myFunction() {
+			var x = document.getElementsByTagName("nav")[0];
+			if (x.className === "") {
+				x.className = "responsive";
+			} else {
+				x.className = "";
+			}
+		}
+
+
+    
+    </script>
+</body>
+</html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <title>
+           About Us
+        </title>
+        
+        
+    </head>
+        <body>
+              <h1><div class="texty"> About Us </div>
+              </h1>
+              <h2><a href="https://www.fiverr.com/matiasosa?source=order_page_user_stamp_link">Mat Hein on Fiverr</a> as Main (only) Music Composer</h2>
+              
+        </body>
+</html>

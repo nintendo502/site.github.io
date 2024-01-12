@@ -1,0 +1,4 @@
+User-agent: Googlebot
+Disallow: /Home.html
+Allow: /purchase.html/
+Allow: /About.html/
